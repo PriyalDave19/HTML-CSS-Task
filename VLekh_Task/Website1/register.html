@@ -28,14 +28,63 @@
     border-radius: 50px; 
 }
 
-#input{
+#div1{
+    display: block;
     margin-left: 10%;
-    margin-top: 20px;
-    height: 8%;
-    width: 50%;
+    margin-top: 30px; 
+    height: 45%;
+    width: 40%;
     font-weight: bold;
     float:left;
 }
+
+#div2{
+    margin-right: 10%; 
+    margin-top: 30px; 
+    height: 45%;
+    width: 40%;
+    font-weight: bold;
+    float:right;
+
+}
+
+#input{
+    height: 12%;
+    width: 80%;
+    font-weight: bold;
+}
+
+#input:hover{
+    background-size: 100%;
+    background-color: rgb(101, 194, 231);
+}
+#div3{
+    margin-left: 10%; 
+    width: 80%;
+    display: inline-block;
+    font-weight: bold; 
+}
+#gender{
+    margin-left: 20%;
+}
+
+#gender:hover{
+    background-size: 150%;
+    background-color: rgb(79, 170, 188);
+}
+
+#btn{
+    font-weight:bold;
+    margin-left: 30%;
+    height: 10%;
+    width: 30%;
+    /* border-radius: 20px; */
+}
+#btn:hover{
+    background-size: 200%;
+    background-color: rgb(79, 170, 188);
+}
+
 </style>
 
 </head>
@@ -72,41 +121,47 @@
            <center> <img id="register" src="../images/registerlogo.jpg" alt=""></center>
             <form action="">
                 
-                <div id="input">
+                <div id="div1">
                     <label for="">Full Name</label>
                 <br>
-                    <input  type="text" placeholder="Enter your name">
-                <br>
-                <label for="">User Name</label>
-                <br>
-                    <input  type="text" placeholder="Enter your username">
-                <br>
+                    <input id="input" type="text" placeholder="Enter Name" required>
+                <br><br>
+               
                 <label for="">Email</label>
                 <br>
-                <input type="email" placeholder="Enter your email">
-                <br>
-                <label for="">Mobile Number</label>
-                <br>
-                <input type="number" placeholder="Enter mobile number">
-               <br>
+                <input id="input" type="email" placeholder="Enter Email" required>
+                <br><br>
                 <label for="">Password</label>
                 <br>
-                <input type="password" placeholder="Enter your password">
+                <input id="input" type="password" placeholder="Enter Password" required>
                 <br>
-                <label for="">Confirm Password</label>
-                <br>
-                <input type="password" placeholder="Confirm your password">
-                <br>
-                <label for="">Gender</label>
-                <br>
-                <input type="radio" placeholder="Enter your gender" name="a">Male
-                <input type="radio" placeholder="Enter your gender" name="a">Female
-                <br>
-                <label for="">Date of Birth</label>
-                <br>
-                <input type="date" placeholder="Enter birth date">
-                
                 </div>
+
+                <div id="div2">
+                    <label>User Name</label>
+                <br>
+                    <input id="input" type="text" placeholder="Enter Username" required>
+                <br><br>
+                    <label for="">Phone Number</label>
+                <br>
+                    <input id="input" type="number" placeholder="Enter Phone Number" required>
+                <br><br>
+                    <label for="">Confirm Password</label>
+                <br>
+                   <input id="input" type="password" placeholder="Confirm Password" required>
+                <br><br><br>
+                </div>
+
+                <label style="margin-left: 10%; font-weight: bold;" for="" required>Gender</label>
+                <br>
+                <div id="div3">
+                <input type="radio" placeholder="Enter your gender" name="a">Male
+                <input  id="gender" type="radio" placeholder="Enter your gender" name="a" >Female
+                <input  id="gender" type="radio" placeholder="Enter your gender" name="a">Prefer not to say
+                </div>
+                <br><br>
+                <button id="btn">Register Now</button>
+
             </form>
         </table>
     
