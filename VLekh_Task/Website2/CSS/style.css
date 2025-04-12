@@ -1,6 +1,17 @@
+#main{
+    height: 150px;
+    width: 95%;
+    margin: 3%;
+}
+
+body{
+    background-color: beige;
+}
+
 #header{
     background-color: grey;
 }
+
 #header_part1{
     height: 150px;
     width: 100%;
@@ -45,16 +56,21 @@
 }
 
 #header_part3{
+    padding: 30px;
     height: 250px;
-    width: 100%;
     background-color: white;
+}
+#header_part3 marquee{
+    padding-top: 5px;
+    border: grey 2px solid;
 }
 
 #content_part1{
     height: 350px;
     width: 71%;
+    margin-right: 0%;
     float: left;
-    margin-left: 20px;
+    padding-left: 20px;
     text-align: justify;
     background-color: white;
 }
@@ -64,7 +80,8 @@
 #content_part2{
     height: 350px;
     width: 22%;
-    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 44px;
     float: right;
     background-color: white;
 }
@@ -93,7 +110,7 @@
 }
 #footer_part2{
     height: 280px;
-    width: 22%;
+    width: 23%;
     margin-right: 20px;
     float: right;
     color: white;

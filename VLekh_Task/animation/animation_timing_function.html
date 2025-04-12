@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The Element to apply the animation to */
+        div{
+            height: 100px;
+            width: 50px;
+            background-color: red;
+            font-weight: bold;
+            animation-duration: 4s;
+            animation: mymove 5s;
+            position: relative;
+           animation-fill-mode: forwards;
+        }
+        .div1{animation-timing-function: linear;}
+        .div2{animation-timing-function: ease;}
+        .div3{animation-timing-function: ease-in;}
+        .div4{animation-timing-function: ease-out;}
+        .div5{animation-timing-function: ease-in-out;}
+        /* The animation code */
+        @keyframes mymove{
+            from{left: 0px;}
+            to{left: 300px;}
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Attribute</h1>
+    <div></div>
+    <p><b>Note:</b>The animation-timing-function property specifies the curve of the animation .The following</p>
+    <div class="div1">linear</div>
+    <div class="div2">ease</div>
+    <div class="div3">ease-in</div>
+    <div class="div2">ease-out</div>
+    <div class="div4">ease-in-out</div>
+</body>
+</html>
